@@ -5,6 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css" />
     <title>{% block title %}Transações realizadas{% endblock %}</title>
   </head>
   <body class="reset body-settings">
@@ -27,11 +28,6 @@
                         <td>{{ values.dados.nome }}</td>
                         <td>{{ values.dados.saldo }}</td>
                     </tr>
-                    
-                </table>
-
-                Transações realizadas:
-                <table>
                     <tr>
                         <th>Tipo Transação</th>
                         <th>Valor</th>
@@ -43,7 +39,12 @@
                     </tr>
                     {% endfor %}
                 </table>
-------------------------------------------
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
                 {% endfor %}
         </body> 
       </section>
