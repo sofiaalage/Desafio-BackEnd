@@ -10,5 +10,4 @@ class AlbumSerializer(serializers.ModelSerializer):
             "valor",
             "cartão",
             "hora",
-            "loja"
         ]

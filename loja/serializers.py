@@ -7,5 +7,7 @@ class AlbumSerializer(serializers.ModelSerializer):
             "id",
             "nome",
             "saldo",
+            "cpf",
+            "dono_da_loja"
         ]
         
