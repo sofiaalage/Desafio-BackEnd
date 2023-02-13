@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{% block title %}Transações realizadas{% endblock %}</title>
+  </head>
+  <body class="reset body-settings">
+    {% block content %}
+    <nav>
+      <a href="{% url 'upload' %}">Fazer upload de novas transações</a>
+    </nav>
+
+    <main class="main-container">
+      <section>
+        <h1>Resultados</h1>
+        <body>  
+            {% for key_name, values in data_response.items %}
+                <table>
+                    <tr>
+                        <th>Loja</th>
+                        <th>Total</th>
+                    </tr>
+                    <tr>
+                        <td>{{ values.dados.nome }}</td>
+                        <td>{{ values.dados.saldo }}</td>
+                    </tr>
+                    
+                </table>
+
+                Transações realizadas:
+                <table>
+                    <tr>
+                        <th>Tipo Transação</th>
+                        <th>Valor</th>
+                    </tr>
+                    {% for transacao in values.trasacoes %}
+                    <tr>
+                        <td>{{ transacao.tipo }}</td>
+                        <td>{{ transacao.valor }}</td>
+                    </tr>
+                    {% endfor %}
+                </table>
+------------------------------------------
+                {% endfor %}
+        </body> 
+      </section>
+    </main>
+    {% endblock %}
+  </body>
+</html>

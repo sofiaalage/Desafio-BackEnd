@@ -1,8 +1,12 @@
 from django import forms  
-class LojaForm(forms.Form):  
+from .models import Loja
+class LojaForm(forms.ModelForm): 
+    class Meta:
+        model = Loja 
+        fields = ('nome','cpf','dono_da_loja')
+
     nome = forms.CharField(label="Coloque seu nome",max_length=50)  
-    saldo  = forms.FloatField(label="Insira o saldo")  
-    cpf = forms.IntegerField(label="Insira o CPF do dono do estabelecimento",)  
+    cpf = forms.CharField(label="Insira o CPF do dono do estabelecimento",max_length=15)  
     dono_da_loja = forms.CharField(label="Insira o nome do dono do estabelecimento", max_length = 50) 
 
  

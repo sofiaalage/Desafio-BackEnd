@@ -19,5 +19,6 @@ from transacao import views
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path('', views.upload, name='upload'),
+    path('upload', views.upload, name='upload'),
+    path('lista', views.lista, name='lista'),
 ]

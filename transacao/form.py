@@ -1,8 +1,13 @@
 from django import forms  
-class TrasacaoForm(forms.Form):  
-    tipo = forms.CharField(label="Insira o tipo da transação",max_length=50)  
-    data = forms.IntegerField(label="Insira a data da transação")  
-    hora = forms.IntegerField(label="Insira a hora da transação")  
+from .models import Transacao
+class TrasacaoForm(forms.ModelForm): 
+    class Meta: 
+        model = Transacao
+        fields = ('tipo','data','hora','valor','cartao')
+    
+
+    tipo = forms.CharField(label="Insira o tipo da transação",max_length=11)  
+    data = forms.CharField(label="Insira a data da transação")  
+    hora = forms.CharField(label="Insira a hora da transação",max_length=9)  
     valor = forms.FloatField(label="Insira o valor da transação")  
-    cartao = forms.IntegerField(label="Insira a hora da transação")  
-    loja = forms.CharField(label="Insira o nome da loja ", max_length = 10)  
+    cartao = forms.CharField(label="Insira a hora da transação",max_length=20)
