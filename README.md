@@ -49,15 +49,15 @@ http://127.0.0.1:8000/lista
 ```
 
 
-<h2>🦄 Autor</h2>
+<h2> Autora </h2>
 
 <table>
   <tr>
     <td align="center">
       <a href="https://github.com/iuricode">
-        <img src="https://avatars3.githubusercontent.com/u/31936044" width="100px;" alt="Foto do Iuri Silva no GitHub"/><br>
+        <img src="[https://avatars3.githubusercontent.com/u/31936044](https://avatars.githubusercontent.com/u/86122263?v=4)" width="100px;" alt="Foto Sofia Alexandrino"/><br>
         <sub>
-          <b>Iuri Silva</b>
+          <b>Sofia Alexandrino</b>
         </sub>
       </a>
     </td>
