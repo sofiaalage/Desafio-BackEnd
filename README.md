@@ -55,7 +55,7 @@ http://127.0.0.1:8000/lista
   <tr>
     <td align="center">
       <a href="https://github.com/iuricode">
-        <img src="[https://avatars3.githubusercontent.com/u/31936044](https://avatars.githubusercontent.com/u/86122263?v=4)" width="100px;" alt="Foto Sofia Alexandrino"/><br>
+        <img src="https://avatars.githubusercontent.com/u/86122263?v=4" width="100px;" alt="Foto Sofia Alexandrino"/><br>
         <sub>
           <b>Sofia Alexandrino</b>
         </sub>
